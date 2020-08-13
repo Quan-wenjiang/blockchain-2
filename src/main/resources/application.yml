@@ -1,0 +1,15 @@
+#spring:
+#  datasource:
+#    username: root
+#    password: Aa-12345678
+#    url: jdbc:mysql://121.43.191.246:3306/BankSystem
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+#    type: com.alibaba.druid.pool.DruidDataSource
+#
+#mybatis:
+#  type-aliases-package: com.example.demo.entity
+#  config-location: classpath:mybatis/mybatis-config.xml
+#  mapper-locations: classpath:mybatis/mapper/*.xml
+
+server:
+  port: 8181
