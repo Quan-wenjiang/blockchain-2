@@ -22,7 +22,8 @@ public interface goodsMapper {
     @Select("select * from seller where Goods= #{good}")
     public seller getsellers(@Param("good") String good);
 
-
+    @Insert("insert into seller values(#{SellerName}, #{SellerScore}, #{ReviewNum}, #{Goods}, #{Time})")
+    public int insertseller(@Param("SellerName")String SellerName, @Param("SellerScore") String SellerScore,@Param("ReviewNum") String ReviewNum ,@Param("Goods") String Goods ,@Param("Time") Date Time);
 
     @Insert("insert into goods values(#{SellerID}, #{ProductScore}, #{ReviewNum}, #{Time})")
     public int insertgoods(@Param("SellerID")String sellerID, @Param("ProductScore") String ProductScore,@Param("ReviewNum") String ReviewNum ,@Param("Time") Date Time);

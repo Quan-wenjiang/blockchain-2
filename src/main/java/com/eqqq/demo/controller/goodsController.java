@@ -72,7 +72,7 @@ public class goodsController {
     public String addgoods(@RequestBody add add) {
         System.out.println(add);
         Mapper.insertgoods(add.SellerID,"0","0", new Date());
-
+        Mapper.insertseller(add.SellerName," "," ",add.SellerID,new Date());
 
 
         return"success";
